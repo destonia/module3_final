@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="col-sm-6">
-                <input type="file" accept="image/*" onchange="loadFile(event)">
+                <input type="file" name="image" accept="image/*" onchange="loadFile(event)">
                 <img id="output" style="width: 200px" src="{{asset('storage/'.$product->image)}}"/>
             </div>
         </div>

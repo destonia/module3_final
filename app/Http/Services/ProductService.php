@@ -38,11 +38,13 @@ class ProductService
     }
     public function update($request)
     {
+        dd($request->file('image'));
         $product = $this->productRepo->getById($request->id);
         $product->fill($request->all());
         if ($request->file('image')) {
             $product->image = $request->file('image')->store('image', 'public');
         }
+        dd($product);
         $this->productRepo->store($product);
     }
 }
