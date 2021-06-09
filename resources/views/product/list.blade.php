@@ -197,7 +197,7 @@
             </div>
 
             <div class="grid-child-followers">
-                {{$product->category_id}}
+                {{$product->category->name}}
             </div>
 
         </div>
