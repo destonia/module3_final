@@ -184,7 +184,7 @@
     </style>
 </head>
 <body>
-<a href="{{route('products.create')}}">Add new Product</a>
+<a href="{{route('products.show-create')}}">Add new Product</a>
 <div class="container">
     @foreach($products as $product)
     <div class="card">

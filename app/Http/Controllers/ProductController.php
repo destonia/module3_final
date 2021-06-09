@@ -46,5 +46,6 @@ class ProductController extends Controller
     }
     public function delete(Request $request){
         $this->productService->delete($request->id);
+        return redirect()->route('products.index');
     }
 }
